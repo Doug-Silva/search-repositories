@@ -7,7 +7,7 @@
   </div><br>
 
   <h1>Search Repositories</h1>
-  <p>API Github, um projeto responsivo para buscar usuários e repositórios no site Github<br>
+  <p>API Github, um projeto React para buscar usuários e repositórios no site Github<br>
      Elaborado no curso de programação: DevSamurai (https://devsamurai.com.br)
   </p>
 
