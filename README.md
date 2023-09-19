@@ -3,7 +3,7 @@
 <div align="center">
   <!--Adicionar logotipo do projeto aqui-->
   <div>
-    <a href='#voltar-topo'><img src="./src/img/logo-projeto.jpg" alt="Logotipo do projeto" height="140" width="260"></a>
+    <a href='#voltar-topo'><img src="./src/assets/images/logo-projeto.jpg" alt="Logotipo do projeto" height="140" width="260"></a>
   </div><br>
 
   <h1>Search Repositories</h1>
@@ -19,7 +19,7 @@
 
   <!--Adicionar imagem/gif do projeto aqui-->
   <div style="width:30%">
-    <a href='#voltar-topo'><img src="./src/img/tela-inicio-projeto.jpg" style="width:100%" alt="Imagem do projeto"></a>
+    <a href='#voltar-topo'><img src="./src/assets/images/tela-inicio-projeto.jpg" style="width:100%" alt="Imagem do projeto"></a>
   </div><hr>
 </div>
 
