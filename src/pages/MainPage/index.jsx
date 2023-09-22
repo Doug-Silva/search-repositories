@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdSearch } from "react-icons/md";
 
 import { Container, Logo, Title, Form, Input, Button } from "./styles";
@@ -6,12 +6,18 @@ import { Container, Logo, Title, Form, Input, Button } from "./styles";
 import githubLogo from "../../assets/images/github-logo.svg";
 
 export default function MainPage() {
+  const [login, setLogin] = useState("");
+
   return (
     <Container>
       <Logo src={githubLogo} alt="API Github" />
       <Title>Search Repositories</Title>
       <Form>
-        <Input placeholder="Usuário" />
+        <Input
+          placeholder="Usuário"
+          value={login}
+          onChange={(event) => setLogin(event.target.value)}
+        />
         <Button>
           <MdSearch size={42} />
         </Button>
