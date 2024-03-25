@@ -29,6 +29,7 @@ export const theme = {
     primary: "#2ecc71",
     secondary: "#ecf0f1",
     container: "#2d2d2d",
+    light: "#ecf0f1",
     background: "#191919",
     text: "#fff",
     link: "#3498db",
