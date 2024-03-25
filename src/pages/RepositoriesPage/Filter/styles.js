@@ -19,7 +19,7 @@ export const Selector = styled.button`
   align-items: center;
   justify-content: space-between;
   background: ${(props) => props.theme.colors.container};
-  color: ${(props) => props.theme.color || props.theme.colors.text};
+  color: ${(props) => props.color || props.theme.colors.text};
   width: 100%;
   min-height: 2rem;
   border: none;
@@ -30,9 +30,9 @@ export const Selector = styled.button`
 
   &:hover,
   &.selected {
-    background: ${(props) => props.theme.color || props.theme.colors.light};
+    background: ${(props) => props.color || props.theme.colors.light};
     color: ${(props) =>
-      props.theme.color ? props.theme.colors.white : props.theme.colors.black};
+      props.color ? props.theme.colors.white : props.theme.colors.black};
       transform: translateX(5px) scale(1.02);
   }
 
@@ -49,10 +49,15 @@ export const Selector = styled.button`
   background: transparent;
   color: ${(props) => props.theme.colors.text};
   border: none;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
 
   &:hover {
     color: rgba(255, 255, 255, 0.5)
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    text-align: center;
+    padding: 0 1rem;
   }
 `;

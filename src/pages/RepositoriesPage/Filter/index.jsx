@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Container, Selector, Cleaner } from "./styles";
+
 function Filter() {
   const langs = [
     { name: "JavaScript", count: 5, color: "#f1c40f" },
@@ -7,7 +9,19 @@ function Filter() {
     { name: "PHP", count: 1, color: "#3498db" },
   ];
 
-  return <h1>Filter</h1>;
+  const selectors = langs.map(({ name, count, color }) => (
+    <Selector key={name.toLocaleLowerCase()} color={color}>
+      <span>{name}</span>
+      <span>{count}</span>
+    </Selector>
+  ));
+
+  return (
+    <Container>
+      {selectors}
+      <Cleaner>Limpar</Cleaner>
+    </Container>
+  );
 }
 
 export default Filter;
